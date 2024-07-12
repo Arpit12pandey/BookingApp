@@ -1,0 +1,4 @@
+//DATABASE HOSTED ONTO THE MONGO ATLAS
+databaseName:bookingDB
+username:airbnb
+password:1234@567
