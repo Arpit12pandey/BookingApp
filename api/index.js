@@ -8,7 +8,7 @@ const jwt=require('jsonwebtoken')
 const cookieParser = require('cookie-parser')
 const fs = require('fs');
 const imageDownloader = require('image-downloader')
-const Place = require('./models/place')
+const Place = require('./models/Place')
 const multer = require('multer')
 require('dotenv').config()
 const app =express()
