@@ -17,8 +17,7 @@ const jwtSecret = 'fasefraw4r5r3wq45wdfgw34twdfg';
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads',express.static(__dirname+'/uploads'))
-app.use(cors({
-    
+app.use(cors({    
     origin:'http://localhost:5173',
     credentials:true
 }))
@@ -28,7 +27,7 @@ app.get('/test',(req,res)=>{
 })
 mongoose.connect(process.env.MONGO_URL).then(()=>{
 console.log("connected to the database successfully")
-});
+});    
 function getUserDataFromReq(req){
   return new Promise((resolve,reject)=>{
     jwt.verify(req.cookies.token, jwtSecret, {}, async (err, userData) => {
